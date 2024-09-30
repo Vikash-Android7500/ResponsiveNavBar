@@ -1,45 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>NavBar</title>
-     <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-     <header>
-          <nav class="navBar">
-               <a class="branding" href="#">VIKASH</a>
+
+<section class="wrapper flex">
+      	 <nav class="flex">
+
+               <section class="HomeIcon">
+                    <a href="#" onclick="reload()">
+                         <i class="fa-solid fa-plus Logo"></i>
+                    </a>
+
+               </section>
+
+               <ul class="flex navMenu">
+                    <li href="#Home" class="navItem">
+
+                         <a class="navLink">
+                              Home
+                         </a>
+                    </li>
+
+                    <li href="#Contact" class="navItem">
+
+                         <a class="navLink">
+                              Contact
+                         </a>
+                    </li>
+
+                    <li href="#FAQ" class="navItem">
+                         <a class="navLink">
+                              FAQ
+                         </a>
+                    </li>
+               </ul>
+
+               <button class="hambergun">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+               </button>
           </nav>
-          <ul class="navMenu">
-               <li class="navItem">
-                    <a class="navLink" href="#">Icon</a>
-               </li>
-               <li class="navItem">
-                    <a class="navLink" href="#">Docs</a>
-               </li>
-               <li class="navItem">
-                    <a class="navLink" href="#">Plans</a>
-               </li>
-          </ul>
-          <div class="hambergun">
-               <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
-          </div>
-     </header>
+</section>
 
+<section class="container flex">
+		<div>
+		<h1> This is Hero Section</h1>
+		</div>
+		<div>
+			<img src="https://th.bing.com/th/id/OIG2.9O4YqGf98tiYzjKDvg7L" alt="image" width="350" height="350">
+		</div>
+		
+</section>
+   
 
-
-
-
-
-
-     <!-- icon's -->
-      <script
-      src="https://kit.fontawesome.com/58a810656e.js"
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- js file -->
     <script src="./logic.js"></script>
+
 </body>
 </html>
+
